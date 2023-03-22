@@ -5,10 +5,9 @@ window=tk.Tk()
 
 def on_button_click():
     check_book=check_box()
-    
     word=input_entry.get()
-    
-    search_in_file(word,check_book) #단어 검색 함수 호출
+
+    search_in_file(word,check_book,var3.get()) #단어 검색 함수 호출
 
 def on_entry_return(event):
     on_button_click()
@@ -30,6 +29,7 @@ input_button.pack()
 #체크박스
 def check_box():
     check_book = []
+
     if var.get() == True:
         check_book.append("창")
         check_book.append("출")
@@ -108,5 +108,11 @@ chech_btn = tk.Checkbutton(text="구약",variable=var)
 chech_btn.pack()
 chech_btn2 = tk.Checkbutton(text="신약",variable=var2)
 chech_btn2.pack()
+
+#검색 스타일 선택 체크박스
+var3 = tk.BooleanVar()
+var.set(True)
+chk_btn_style = tk.Checkbutton(text="정확한 검색 활성화", variable=var3)
+chk_btn_style.pack()
 
 window.mainloop()
