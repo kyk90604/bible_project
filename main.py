@@ -33,7 +33,7 @@ def search_in_file(words, checkbook, style):
     else:
         print("공백이거나 숫자가 포함되어 있습니다.", words)
         return "공백"
-12
+
 # 검색어가 두 개 이상일 시, 각 단어를','를 기준으로 나눠서 리스트에 저장함. 한개면 그대로 리턴
 def is_words_list(word):
     if "," in word:
