@@ -2,11 +2,11 @@
 filename = ".\\Korean Standard Version of The Bible.txt" #성경 종류 선택에 따른 경로 지정 필요
 
 #메인 검색 함수
-def search_in_file(words, checkbook, style):
+def search_in_file(words, checkbook, style): #words - str
     global check_box #정확한 검색 활성화/비활성화(포괄적 검색)
     global exact_search
 
-    check_box = checkbook
+    check_box = checkbook #list
     search_complete = ""
     exact_search = style
 
