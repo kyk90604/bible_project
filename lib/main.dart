@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
               title: Text("성경 검색")
           ),
-          body: Container(
+          body: Container( 
             width: double.infinity, height: 200,
             child: Row(
               children: [
