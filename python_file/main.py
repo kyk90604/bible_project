@@ -78,7 +78,5 @@ def check_box_for_search(line):
             return False
 
 #def main():
-
-
 #if __name__ == "__main__":
 #    main()
