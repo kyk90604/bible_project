@@ -18,7 +18,7 @@ def search_in_file(words, checkbook, style): #words - str
             
             for line in file:
                 words_in_line=choose_search_style(line)
-                WindowsError
+                
                 #list형식의 words_in_line일 경우
                 if all(word in words_in_line for word in words_list):
                     search_complete = line
