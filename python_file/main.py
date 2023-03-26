@@ -1,5 +1,5 @@
 
-filename = "C:\\Users\\90604\\OneDrive\\바탕 화면\\project_bb\\bible_project\\python_file\\Korean Standard Version of The Bible.txt" #성경 종류 선택에 따른 경로 지정 필요
+filename = ".\\python_file\\Korean Standard Version of The Bible.txt" #성경 종류 선택에 따른 경로 지정 필요
 
 #메인 검색 함수
 def search_in_file(words, checkbook, style): #words - str
