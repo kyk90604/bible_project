@@ -15,8 +15,8 @@ class _MyAppState extends State<MyApp> {
   bool _checkbox1Value = false;
   bool _checkbox2Value = false;
   bool _checkbox_search_style = false;
+  List<bool> _checkboxValues = List.generate(10, (index) => false);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

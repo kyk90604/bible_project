@@ -77,6 +77,14 @@ def check_box_for_search(line):
             print("check_box_for_search 오류")
             return False
 
+
+def search_page(words_list):
+    
+    with open(filename, "r", encoding="UTF-8") as file:
+        for line in file:
+            if all(word in line for word in words_list):
+                return line
+    
 #def main():
 #if __name__ == "__main__":
 #    main()
