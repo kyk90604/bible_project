@@ -8,12 +8,35 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
         body: Center(
-          child: Text('Hello World'),
-        ),
+            child: Container(
+                child: Column(
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text('Hello World'),
+                Text('Hello World'),
+                Text('Hello World'),
+              ],
+            ),
+            Row(
+              //버튼 두개를 가로로 배치
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ElevatedButton(
+                  child: Text('RaisedButton'),
+                  onPressed: () {},
+                ),
+                TextButton(
+                  child: Text('FlatButton'),
+                  onPressed: () {},
+                ),
+              ],
+            )
+          ],
+        ))),
       ),
     );
   }
