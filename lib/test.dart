@@ -12,32 +12,22 @@ class MyApp extends StatelessWidget {
             child: Container(
                 child: Column(
           children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text('Hello World'),
-                Text('Hello World'),
-                Text('Hello World'),
-              ],
-            ),
-            Row(
-              //버튼 두개를 가로로 배치
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ElevatedButton(
-                  child: Text('RaisedButton'),
-                  onPressed: () {},
-                ),
-                TextButton(
-                  child: Text('FlatButton'),
-                  onPressed: () {},
-                ),
-              ],
-            )
+            appbar(),
           ],
         ))),
       ),
     );
+  }
+
+//상단에 위치한 탭, 메뉴 바
+  Widget appbar() {
+    return Container(
+        child:
+            //상단 탭 및 메뉴
+            IconButton(
+                icon: Icon(Icons.menu),
+                onPressed: () {
+                  print('menu button is clicked');
+                }));
   }
 }
