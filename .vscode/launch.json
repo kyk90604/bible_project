@@ -5,11 +5,19 @@
     "version": "0.2.0",
     "configurations": [
     
+    
         {
-            "name": "Flutter 디버깅",
+            "name": "Flutter 디버깅(web)",
             "type": "dart",
             "request": "launch",
-            "program": "${file}"
+            "program": "${file}",
+            "args": ["-d","chrome"]
+        },
+        {
+            "name": "Flutter 디버깅(window)",
+            "type": "dart",
+            "request": "launch",
+            "program": "${file}",
         },
         {
             "name": "Python 디버깅",
