@@ -22,9 +22,6 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'MyApp',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Search'),
-        ),
         body: Column(
           children: [
             Row(
